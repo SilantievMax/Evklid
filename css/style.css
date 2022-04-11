@@ -1,0 +1,559 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat"),
+         url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+         url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat"),
+        url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Montserrat"),
+        url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+    background: rgba(255, 153, 0, 0.7);
+}
+
+.btn:focus {
+    background: rgba(255, 153, 0, 0.7); 
+}
+
+.btn:active {
+    background: rgba(225, 103, 14, 1);
+}
+
+/* global */
+
+.container {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    height: 100px; 
+    padding-top: 15px; 
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 224px;
+}
+
+.header__nav-list {
+    display: flex;
+}
+
+.header__nav-item:not(:last-child) {
+    padding-right: 76px;
+}
+
+.header__nav-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    padding: 5px;
+}
+
+.header__nav-link:hover {
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 7px;
+}
+
+.header__nav-link:focus  {
+    box-shadow: border-box;
+    outline: 2px solid #ff9900;
+    padding: 5px;
+}
+
+.header__nav-link:active {
+    color: #E1670E;
+    border-bottom: 2px solid #E1670E;
+    outline: none;
+    padding-bottom: 7px;
+}
+
+
+/* section-hero */
+
+.section-hero__container {
+    padding-top: 100px;
+}
+
+.section-hero__slideer {
+    padding-top: 100px;
+    padding-left: 80px;
+    background-image: url(../img/low-angle-photo-of-balconies-2462015\ 1.webp);
+    background-repeat: no-repeat;
+}
+
+.section-hero__heading {
+    width: 837px;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    color: #FFFFFF;
+}
+
+.section-hero__description {
+    width: 837px;
+    padding-top: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.section-hero__btn {
+    margin-top: 90px;
+    margin-bottom: 100px;
+    display: inline-block;
+    background-color: #FF9900;
+    padding: 24.83px 36.88px;
+    font-weight: 700;
+    font-size: 23.4581px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* section-about */
+
+.section-about__container {
+    margin-top: 100px;
+}
+
+.section-about__description {
+    margin-top: 20px;
+    line-height: 32px;
+    width: 70%;
+}
+
+.section-about__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.section-about__left-block {
+    display: flex;
+    align-items: flex-end;
+    align-items: flex-end;
+    width: 868px;
+    height: 622px;
+    margin-right: 32px;
+    background-image: url(../img/Rectangle2.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.section-about__background {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.section-about__description-card {
+    width: 454px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.section-about__btn {
+    border: 3px solid #FF9900;
+    padding: 17px 35px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;   
+}
+
+.section-about__right-block {
+    width: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-about__card {
+    display: flex;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 60px;
+    padding-right: 90px;
+    border: 1px solid #CACACA;
+}
+
+.section-about__img-card {
+    width: 240px;
+    height: 165px;
+    padding-right: 50px;
+}
+
+.section-about__heading-card {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;   
+}
+
+.section-about__description-cards {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+}
+
+/* section-work */
+
+.section-work__container {
+    margin-top: 100px;
+}
+
+.section-work__list {
+    padding-top: 50px;
+    padding-bottom: 45px;
+    display: flex;
+}
+
+.section-work__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;    
+}
+
+.section-work__item:first-child {
+    color: #E1670E;
+}
+
+.section-work__item:not(:last-child) {
+    padding-right: 85px;
+}
+
+.section-work__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-work__left-block {
+    position: relative;
+    width: 758px;
+}
+
+.section-work__heading-card {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;    
+}
+
+.section-work__description-cards {
+    padding-top: 8px;
+    line-height: 32px;
+}
+
+.section-work__position {
+    position: absolute;
+    bottom: 0;
+}
+
+.section-work__btn {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.section-work__btn_detailed {
+    display: inline-block;
+    margin-right: 28px;
+    padding: 19px 38px;
+    background-color: #FF9900;
+    border: 1px solid #FF9900;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.section-work__btn_contract {
+    display: inline-block;
+    padding: 19px 37px;
+    border: 1px solid #333333;
+    font-weight: 400;
+    color: #333333;
+}
+
+.section-work__right-block {
+    width: 870px;
+    height: 460px;
+    margin-left: 10px;
+    margin-top: 8px;
+    background-image: url(../img/Rectangle18.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* section-questions */ 
+
+.section-questions__container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-questions__list {
+    padding-top: 44px;
+}
+
+.section-questions__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #CACACA;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;   
+}
+
+.section-questions__item:last-child {
+    border-bottom: 1px solid #CACACA;
+}
+
+.section-questions__item:hover {
+    color: rgba(255, 153, 0, 1);
+    border-top: 1px solid rgba(255, 153, 0, 1);
+}
+
+.section-questions__item:hover .section-questions__btn-icon {
+    background-color: rgba(255, 153, 0, 1);
+    color: #fff;
+}
+
+.section-questions__btn-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ECECEC;
+    background-image: url(../svg/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* footer */
+
+.footer {
+   background-color: #222; 
+}
+
+.footer-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item {
+    position: relative;
+}
+
+.footer__logo-img {
+    margin-bottom: 17px;
+}
+
+.footer__item-card-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    color: #CACACA;    
+}
+
+.footer__list-link {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.footer__item-link {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+}
+.footer__item-social {
+    bottom: 0;
+}
+
+.footer__item-social:not(:last-child) {
+    margin-right: 25px;
+}
+
+.footer__item-link_facebook {
+    background-image: url(../svg/facebook.svg);
+}
+
+.footer__item-link_vk {
+    background-image: url(../svg/vk.svg)
+}
+
+.footer__item-link_instagram {
+    background-image: url(../svg/instagram.svg)
+}
+
+.footer__heading-card {
+    color: #CACACA;
+    padding-bottom: 25px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__input {
+    width: 570px;
+    height: 60px;
+    margin-bottom: 25px;
+    background-color: #414141;
+    border: none;
+    padding: 14px 25px;
+    color: #cacaca;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    outline: none;
+}
+
+.footer__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;    
+}
+
+.footer__input_textarea {
+    height: 150px;
+    margin-bottom: 32px;
+}
+
+.footer__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__btn {
+    background-color: #FF9900;
+    padding: 19px 52px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer__heading-checkbox {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;    
+}
+
+.footer__item_width {
+    max-width: 368px;
+    margin-top: 89px;
+}
+
+.footer__description {
+    color: #CACACA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
