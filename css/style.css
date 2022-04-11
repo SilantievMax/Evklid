@@ -406,12 +406,14 @@ html {
 .section-questions__item:hover {
     color: rgba(255, 153, 0, 1);
     border-top: 1px solid rgba(255, 153, 0, 1);
+    border-bottom: 1px solid rgba(255, 153, 0, 1);
 }
 
 .section-questions__item:hover .section-questions__btn-icon {
     background-color: rgba(255, 153, 0, 1);
     color: #fff;
 }
+
 
 .section-questions__btn-icon {
     width: 50px;
