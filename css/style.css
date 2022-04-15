@@ -442,7 +442,11 @@ html {
 }
 
 .footer__item {
-    position: relative;
+    position: relative;   
+}
+
+.footer__item_weadht {
+    width: 370px;
 }
 
 .footer__logo-img {
