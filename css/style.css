@@ -34,8 +34,16 @@
         url("../fonts/Montserrat-ExtraBold.woff") format("woff");
 }
 
-* {
+html {
     box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -53,30 +61,15 @@ ul {
     list-style: none;
 }
 
-html {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.btn:hover {
-    background: rgba(255, 153, 0, 0.7);
-}
-
-.btn:focus {
-    background: rgba(255, 153, 0, 0.7); 
-}
-
-.btn:active {
-    background: rgba(225, 103, 14, 1);
-}
 
 /* global */
 
-.container {
-    max-width: 1800px;
+.wrapper {
+    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .heading {
@@ -93,14 +86,28 @@ html {
     color: #333333;
 }
 
+.btn:hover {
+    background: rgba(255, 153, 0, 0.7);
+}
+
+.btn:focus {
+    background: rgba(255, 153, 0, 0.7); 
+}
+
+.btn:active {
+    background: rgba(225, 103, 14, 1);
+}
+
 /* header */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100px; 
-    padding-top: 15px; 
-    position: fixed;
     z-index: 1;
+    padding-top: 15px; 
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
@@ -111,12 +118,18 @@ html {
     align-items: center;
 }
 
+.header__burger {
+    display: none;
+    
+}
+
 .header__logo-img {
     width: 224px;
 }
 
 .header__nav-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header__nav-item:not(:last-child) {
@@ -149,7 +162,6 @@ html {
     padding-bottom: 7px;
 }
 
-
 /* section-hero */
 
 .section-hero__container {
@@ -159,37 +171,37 @@ html {
 .section-hero__slideer {
     padding-top: 100px;
     padding-left: 80px;
+    padding-bottom: 100px;
     background-image: url(../img/low-angle-photo-of-balconies-2462015\ 1.webp);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-hero__heading {
-    width: 837px;
+    max-width: 837px;
     font-weight: 800;
     font-size: 70px;
     line-height: 85px;
     color: #FFFFFF;
+    padding-bottom: 24px;
 }
 
 .section-hero__description {
-    width: 837px;
-    padding-top: 24px;
+    max-width: 837px;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
+    padding-bottom: 90px;
 }
 
 .section-hero__btn {
-    margin-top: 90px;
-    margin-bottom: 100px;
     display: inline-block;
     background-color: #FF9900;
     padding: 24.83px 36.88px;
     font-weight: 700;
     font-size: 23.4581px;
     line-height: 29px;
-    text-align: center;
     color: #FFFFFF;
 }
 
@@ -214,17 +226,18 @@ html {
 .section-about__left-block {
     display: flex;
     align-items: flex-end;
-    align-items: flex-end;
     width: 868px;
-    height: 622px;
+    min-height: 622px;
     margin-right: 32px;
     background-image: url(../img/Rectangle2.webp);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-about__background {
     width: 100%;
+    min-width: 563px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,7 +246,7 @@ html {
 }
 
 .section-about__description-card {
-    width: 454px;
+    max-width: 454px;
     font-weight: 700;
     font-size: 16px;
     line-height: 32px;
@@ -251,7 +264,7 @@ html {
 }
 
 .section-about__right-block {
-    width: 870px;
+    max-width: 870px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -266,9 +279,12 @@ html {
     border: 1px solid #CACACA;
 }
 
+.section-about__card:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 .section-about__img-card {
-    width: 240px;
-    height: 165px;
+    max-width: 240px;
     padding-right: 50px;
 }
 
@@ -321,7 +337,7 @@ html {
 
 .section-work__left-block {
     position: relative;
-    width: 758px;
+    max-width: 758px;
 }
 
 .section-work__heading-card {
@@ -332,7 +348,9 @@ html {
 }
 
 .section-work__description-cards {
+    max-width: 758;
     padding-top: 8px;
+    padding-bottom: 70px;
     line-height: 32px;
 }
 
@@ -366,8 +384,9 @@ html {
 
 .section-work__right-block {
     width: 870px;
+    /* min-width: 750px; */
     height: 460px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 8px;
     background-image: url(../img/Rectangle18.webp);
     background-position: center center;
@@ -443,6 +462,10 @@ html {
 
 .footer__item {
     position: relative;   
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 20px;
 }
 
 .footer__item_weadht {
@@ -562,4 +585,157 @@ html {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
+}
+
+@media (max-width: 1024px) {
+
+    /* global */
+    .wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .heading {
+        font-size: 48px;
+    }
+
+    /* header */
+    .header {
+        padding-top: 26px;
+    }
+
+    .header__nav-item:not(:last-child) {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .header__burger-line {
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background: #333333;
+    }
+
+    .header__burger-line:not(:first-child) {
+        margin-top: 7px;
+    }
+
+    .header__logo-img {
+        width: 150px;
+    }
+
+    /* section-hero */
+    .section-hero__slideer {
+        background-image: url(../img/low-angle-photo-of-balconies.webp);
+        padding: 160px 77px;
+    }
+
+    .section-hero__heading {
+        font-size: 60px;
+        line-height: 73px;
+        padding-bottom: 16px;    
+    }
+
+    .section-hero__description {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 60px;
+    }
+
+    /* section-about */
+    .section-about__container {
+        margin-top: 80px;
+    }
+
+    .section-about__description {
+         width: 100%;
+         margin-top: 9px;
+    }
+
+    .section-about__block {
+        flex-direction: column;
+        margin-top: 62px;
+    }
+
+    .section-about__left-block {
+        width: 100%;
+        height: 640px;
+        margin-bottom: 32px;
+    }
+
+    .section-about__right-block {
+        max-width: 924px;
+    }
+
+    .section-about__card {
+        width: 100%;
+        padding-left: 76px;
+    }
+
+    /* section-work */
+    .section-work__container {
+        margin-top: 80px;
+    }
+
+    .section-work__list {
+        padding-bottom: 50px;
+    }
+
+    .section-work__left-block {
+        width: 437px;
+    }
+
+    .section-work__right-block {
+        max-width: 437px;
+        height: 689px;
+        background-size: cover;
+    }
+
+    /* section-questions */
+    .section-questions__container {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .section-questions__list {
+        padding-top: 32px;
+    }
+
+    .section-questions__item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .section-questions__heading-item {
+        font-size: 20px;
+        width: 756px;
+    }
+
+    /* footer */
+    .footer__item:nth-child(2) {
+        margin-right: 0px;
+    }
+
+    .footer-form {
+        width: 541px;
+    }
+
+    .footer__input {
+        width: 100%;
+    }
+
+    .footer__item_width {
+        display: none;
+    }
+
+    .footer__btn {
+        width: 240px;
+        padding: 19px 37.5px;
+    }
 }
