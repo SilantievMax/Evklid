@@ -383,7 +383,8 @@ ul {
 }
 
 .section-work__right-block {
-    width: 870px;
+    max-width: 870px;
+    width: 100%;
     /* min-width: 750px; */
     height: 460px;
     margin-left: 20px;
@@ -723,7 +724,7 @@ ul {
     }
 
     .footer-form {
-        width: 541px;
+        max-width: 541px;
     }
 
     .footer__input {
@@ -737,5 +738,107 @@ ul {
     .footer__btn {
         width: 240px;
         padding: 19px 37.5px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* header */
+    .header {
+        height: 69px;
+        padding-top: 10px;
+    }
+
+    /* section-hero */
+    .section-hero__container {
+        padding-top: 69px;
+    }
+
+    .section-hero__slideer {
+        padding: 159px 40px;
+    }
+
+    .section-hero__heading {
+        font-size: 50px;
+        line-height: 61px;
+    }
+
+    .section-hero__description {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* section-about */
+    .section-about__left-block {
+        height: 650px;
+    }
+
+    .section-about__background {
+        padding: 34px 40px;
+    }
+
+    .section-about__description-card {
+        max-width: 366px;
+    }
+
+    .section-about__card {
+        padding: 35px 40px;
+        padding-right: 24px;
+    }
+
+    .section-about__img-card {
+        width: 128px;
+        padding-right: 16px;
+    }
+
+    /* section-work */
+    .section-work__list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 44px;
+    }
+
+    .section-work__item:not(:last-child) {
+        padding-right: 0;
+    }
+
+    .section-work__block {
+        flex-direction: column-reverse;
+    }
+
+    .section-work__left-block {
+        width: 100%;
+    }
+
+    .section-work__description-cards {
+        padding-bottom: 86px;
+    }
+
+    .section-work__right-block {
+        margin: 0;
+        margin-bottom: 38px;
+        max-width: 668px;
+        height: 284px;
+    }
+
+    /* section-questions */
+    .section-questions__heading-item {
+        width: 570px;
+    }
+
+    /* footer */
+
+    .footer__item:nth-child(2) {
+        padding-bottom: 50px;
+    }
+    .footer__list {
+        flex-direction: column-reverse;
+    }
+
+    .footer__list-card {
+        display: none;
+    }
+
+    .footer__list-link {
+        position: static;
     }
 }
