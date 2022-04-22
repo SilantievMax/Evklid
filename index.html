@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Евклид</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Евклид</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
     <header class="header">
         <div class="wrapper">
             <div class="header__container">
@@ -119,29 +119,70 @@
                <div class="work__container">
                     <h2 class="heading work__heading">Как мы работаем</h2>
                     <ul class="work__list">
-                        <li class="work__item">
+                        <li class="work__item work__btn-active" data-path="one">
                             1 шаг
                         </li>
-                        <li class="work__item">
+                        <li class="work__item" data-path="two">
                             2 шаг
                         </li>
-                        <li class="work__item">
+                        <li class="work__item" data-path="three">
                             3 шаг
                         </li>
-                        <li class="work__item">
+                        <li class="work__item" data-path="four">
                             4 шаг
                         </li>
                     </ul>
-                    <div class="work__block">
-                        <div class="work__left-block">
-                            <h4 class="work__heading-card">Проводим консультацию</h4>
-                            <p class="description work__description-cards">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-                            <span class="work__position">
-                                <a href="#" class="btn work__btn work__btn_detailed">Подробнее</a>
-                                <a href="#" class="btn work__btn work__btn_contract">Договор</a>
-                            </span>
+                    <div class="work__content-desable work__content-active" data-target="one">
+                        <div class="work__block">
+                            <div class="work__left-block">
+                                <h4 class="work__heading-card">Проводим консультацию</h4>
+                                <p class="description work__description-cards">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                                <span class="work__position">
+                                    <a href="#" class="btn work__btn work__btn_detailed">Подробнее</a>
+                                    <a href="#" class="btn work__btn work__btn_contract">Договор</a>
+                                </span>
+                            </div>
+                            <div class="work__right-block work__right-block_workimg1"></div>
                         </div>
-                        <div class="work__right-block"></div>
+                    </div>
+                    <div class="work__content-desable " data-target="two">
+                        <div class="work__block">
+                            <div class="work__left-block">
+                                <h4 class="work__heading-card">Составляем смету </h4>
+                                <p class="description work__description-cards">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+                                <span class="work__position">
+                                    <a href="#" class="btn work__btn work__btn_detailed">Подробнее</a>
+                                    <a href="#" class="btn work__btn work__btn_contract">Договор</a>
+                                </span>
+                            </div>
+                            <div class="work__right-block work__right-block_workimg2"></div>
+                        </div>
+                    </div>
+                    <div class="work__content-desable" data-target="three">
+                        <div class="work__block">
+                            <div class="work__left-block">
+                                <h4 class="work__heading-card">Привлекаем подрядчиков</h4>
+                                <p class="description work__description-cards">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+                                <span class="work__position">
+                                    <a href="#" class="btn work__btn work__btn_detailed">Подробнее</a>
+                                    <a href="#" class="btn work__btn work__btn_contract">Договор</a>
+                                </span>
+                            </div>
+                            <div class="work__right-block work__right-block_workimg3"></div>
+                        </div>
+                    </div>
+                    <div class="work__content-desable" data-target="four">
+                        <div class="work__block">
+                            <div class="work__left-block">
+                                <h4 class="work__heading-card">Инспектируем все этапы работ</h4>
+                                <p class="description work__description-cards">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет. </p>
+                                <span class="work__position">
+                                    <a href="#" class="btn work__btn work__btn_detailed">Подробнее</a>
+                                    <a href="#" class="btn work__btn work__btn_contract">Договор</a>
+                                </span>
+                            </div>
+                            <div class="work__right-block work__right-block_workimg4"></div>
+                        </div>
                     </div>
                </div>
             </div>
@@ -172,7 +213,7 @@
                             <div class="questions__btn-icon"></div>
                         </li>
                     </ul>
-               </div>
+                </div>
             </div>
         </section>
     </main>
