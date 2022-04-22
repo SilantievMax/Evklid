@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Евклид</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -49,10 +52,32 @@
         <section class="hero">
             <div class="wrapper">
                 <div class="hero__container">
-                    <div class="hero__slideer">
-                        <h1 class="hero__heading">Проектные решения любой сложности</h1>
-                        <p class="hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-                        <a href="#" class="btn hero__btn">Заказать расчёт</a>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="hero__slideer hero__slideer_bg1">
+                                    <h1 class="hero__heading">Проектные решения любой сложности</h1>
+                                    <p class="hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                                    <a href="#" class="btn hero__btn">Заказать расчёт</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero__slideer_bg2">
+                                <div class="hero__slideer">
+                                    <h1 class="hero__heading">Проектные решения любой сложности</h1>
+                                    <p class="hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                                    <a href="#" class="btn hero__btn">Заказать расчёт</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero__slideer_bg3">
+                                <div class="hero__slideer">
+                                    <h1 class="hero__heading">Проектные решения любой сложности</h1>
+                                    <p class="hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                                    <a href="#" class="btn hero__btn">Заказать расчёт</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
