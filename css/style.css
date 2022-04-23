@@ -199,10 +199,14 @@ ul {
 
 .hero__slideer_bg2 {
     background-image: url(../img/bg2.webp);
+    background-size:cover;
+    background-repeat: no-repeat
 }
 
 .hero__slideer_bg3 {
     background-image: url(../img/bg3.webp);
+    background-size:cover;
+    background-repeat: no-repeat
 }
 
 .hero__heading {
