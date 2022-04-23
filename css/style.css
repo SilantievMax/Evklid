@@ -458,16 +458,13 @@ ul {
 }
 
 .questions__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-top: 1px solid #CACACA;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: #333333;   
+    color: #333333;
+    border-top: 1px solid #CACACA;
 }
 
 .questions__item:last-child {
@@ -480,21 +477,43 @@ ul {
     border-bottom: 1px solid rgba(255, 153, 0, 1);
 }
 
+.ui-accordion-header-icon {
+    display: none;
+}
+
+.questions__group {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questions__description {
+    max-height: 426px;
+    max-width: 1003px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.questions__btn-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(../svg/plus.svg);
+    background-repeat: no-repeat;
+    background-color: #ECECEC;
+    background-position: center center;
+    border-radius: 50%;
+    transition: transform 1s ease;
+}
+
 .questions__item:hover .questions__btn-icon {
     background-color: rgba(255, 153, 0, 1);
     color: #fff;
 }
 
-
-.questions__btn-icon {
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ECECEC;
-    background-image: url(../svg/plus.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+.ui-accordion-header-active .questions__btn-icon {
+    transform: rotate(90deg);
 }
 
 /* footer */
@@ -780,6 +799,10 @@ ul {
         width: 756px;
     }
 
+    .questions__description {
+        margin-bottom: 163px;
+    }
+
     /* footer */
     .footer__item:nth-child(1) {
         max-width: 360px;
@@ -868,7 +891,7 @@ ul {
     }
 
     .work__item:not(:last-child) {
-        padding-right: 0;
+        margin-right: 0;
     }
 
     .work__block {
@@ -898,6 +921,10 @@ ul {
 
     .questions__heading-item {
         width: 570px;
+    }
+
+    .questions__description {
+        margin-bottom: 380px;
     }
 
     /* footer */
@@ -1123,6 +1150,10 @@ ul {
         width: 30px;
         height: 30px;
         background-size: 19px;
+    }
+
+    .questions__description {
+        margin-bottom: 725px;
     }
 
     /* footer */
