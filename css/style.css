@@ -656,6 +656,40 @@ ul {
     color: #CACACA;    
 }
 
+.footer__heading-checkbox {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#footer__checkbox {
+    display: none;
+}
+
+#footer__checkbox + span {
+    position: absolute;
+    top: -3;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+
+}
+
+#footer__checkbox + span::before {
+    content: url(../svg/Check.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+#footer__checkbox:checked + span::before {
+    content: url(../svg/Check-active.svg);
+}
+
 .footer__item_width {
     max-width: 368px;
     margin-top: 89px;
