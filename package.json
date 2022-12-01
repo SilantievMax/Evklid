@@ -1,0 +1,23 @@
+{
+  "name": "evklid",
+  "version": "1.0.0",
+  "description": "Это одностраничный сайт сделан по макету из [figma](https://www.figma.com/file/9ZBnSDaQlGmp4CcvgxVQwR/Cld?node-id=160%3A1052), резиновая адаптивная верстка, для расположения блоков на сайте был использован flexbox. Для реализации слайдера использована библиотека Swiperjs, для реализации аккордеона jquery, а бургер написан на чистом js.",
+  "main": "index.js",
+  "homepage": "https://silantievmax.github.io/Evklid",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilantievMax/Evklid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilantievMax/Evklid/issues"
+  },
+  "homepage": "https://github.com/SilantievMax/Evklid#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
